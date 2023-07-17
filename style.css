@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap'); /*font-family: 'Poppins', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap'); /*font-family: 'Bacasime Antique', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); /*font-family: 'Lato', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); /*font-family: 'Roboto', sans-serif;*/
+
+
+
+/* Toda la web */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Cuerpo de las webs */
+body{ 
+    font-family: 'Poppins', sans-serif;
+}
+/* Estilo para la barra lateral ancho*/
+::-webkit-scrollbar{
+    width: 7px;
+}
+/* Estilo para barra lateral */
+::-webkit-scrollbar-thumb{
+    border-radius: 25px;
+    background: linear-gradient(0deg, rgba(19,234,251,1) 0%, rgba(140,0,246,1) 100%);
+}
+/* Estilo para el trayecto de la barra lateral */
+::-webkit-scrollbar-track{
+    background-color: #e4e4e4;
+    border-radius: 25px;
+}
+/* Clase para el body */
+.pagBackground{
+    background-color: #BDACFF;
+}
+/*Estilo para el banner web*/
+/* Titulo de web */
+h1{
+    padding-top: 12px;
+    font-size: 50px;
+    font-family: 'Bacasime Antique', serif;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #2100A7;
+    color: #fff;
+}
+/* Contenedor de logo en la nav  */
+.logoContainer{
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    border-radius: 100%;
+    margin-left: -350px;
+    margin-top: 8px;
+}
+/* Imagen del logo en la nav */
+.logoSC{
+    padding: 20px;
+    width: 140px;
+    height: 140px;
+}
+/*Estilo para la barra de navegacion*/
+/*Contenedor de la barra de navegacion*/
+.navbar {
+    overflow: hidden;
+    background-color: #2100A7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 8px;
+}
+/* Imagen dentro de la nav */
+.navbar img.logoSC{
+    float: left;
+    clear: left;
+}
+/*Links de la barra de navegacion*/
+.padrenav{
+    padding-left: 200px;
+    margin-bottom: -25px;
+}
+/* Links dentro de la barra de navegacion */
+.navbar a {
+    float: left;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-top: 12px;
+}
+/*Contenedor del dropdown*/
+.dropdownMenu {
+    float: left;
+    overflow: hidden;
+    margin-top: 12px;
+}
+/*Botones del dropdown*/
+.dropdownMenu .dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0; 
+}
+/*Hover de los links*/
+.navbar a:hover, .dropdownMenu:hover .dropbtn {
+    background-color: #fff;
+    color: #2100A7;
+}
+/*Dropdown contenido*/
+.contentDropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/*Links dentro del dropdown*/
+.contentDropdown a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+/*Hover de los links dentro del dropdown*/
+.contentDropdown a:hover {
+    background-color: #ddd;
+}
+/*Mostrar el dropdown menu con hover*/
+.dropdownMenu:hover .contentDropdown {
+    display: block;
+}
+/*ESTILO PARA PAG. REGISTRO EXITOSO*/
+.fondoExitoso {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(Images/background\ image\ page\ 1.jpg);
+    background-size: cover;
+}
+/* contenedor de mensaje exito */
+.containerExitoso {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+}
+/* Contenedor del registro de usuario */
+.containerRegistroUsuario { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+}
+/* Hijo de contenedor del registro de usuario */
+.childContainerR {
+    background-color: rgba(255, 255, 255, 0.8); 
+    width: 60%;
+    max-width: 400px;
+    padding: 30px;
+    height: fit-content;
+    border-radius: 30px;
+    text-align: center;
+}
+/* Contenedor del login */
+.containerLogin { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+}
+/* Hijo de contenedor del login */
+.childContainerL {
+    background-color: rgba(255, 255, 255, 0.8); 
+    width: 60%;
+    max-width: 400px;
+    padding: 30px;
+    height: 425px;
+    border-radius: 30px;
+    text-align: center;
+}
+/* Boton para registrarse y login */
+.btnRegister{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 15px;
+    background-color: blue;
+    border-radius: 25px;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+} 
+/* Clase para tener los inputs de text del mismo tamaño */
+.inputsForms{
+    height: 50px;
+    width: 400px;
+}
+/* Clase para tener los inputs de password  del mismo tamaño que los de text */
+.inputsFormsP{
+    height: 50px;
+    width: 337px;
+}
+/* Hijo de contenedor de mensaje exito */
+.childContainerE {
+    background-color: rgba(255, 255, 255, 0.8); 
+    width: 60%;
+    max-width: 400px;
+    padding: 30px;
+    height: 300px;
+    border-radius: 30px;
+    text-align: center;
+}
+/*clase para poner el texto del checkbox a la izquierda*/
+.alignleft {
+	float: left;
+}
+/*clase para poner el texto de olvidé mi usuario a la derecha*/
+.alignright {
+	float: right;
+}
+
+/* Icono de comprobado (gancho) */
+.nice {
+    height: 120px;
+    width: 120px;
+    margin-bottom: 10px;
+}
+.logo {
+    height: 60px;
+    width: 60px;
+    margin-bottom: 10px;
+}
+/* Titulo de pagina */
+.titRegExi {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+/* Boton para continuar */
+.btnContinue {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 16px;
+    background-color: blue;
+    border-radius: 26px;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+} 
+/* Cambio de color para hover */
+.btnContinue:hover {
+    background-color: green;
+} 
+/* Estilo especifico de la etiqueta span */
+.btnContinue span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+}
+/* agrega una flecha hacia la derecha al boton luego de hacer el hover */
+.btnContinue span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -21px;
+    transition: 0.4s;
+}
+/* Le da un espacio a la derecha al boton */
+.btnContinue:hover span {
+    padding-right: 25.1px;
+}
+/* Muestra la flecha en el boton */
+.btnContinue:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* Estilo para cuerpo de la pagina home */
+/* Contenedor de las cards con videos y links */
+.vidsContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+/* Todos los videos */
+#video{
+    background-color: #fff;
+    padding: 12px;
+    margin: 20px;
+    border-radius: 25px;
+    max-height: max-content;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+#foto{
+    background-color: #fff;
+    max-height: max-content;
+    padding: 12px;
+    margin: 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+}
+/* Titulo de los videos */
+.titVideo{
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    margin: 12px;
+}
+/* Contenedor  del video 1 */
+.container1{
+    grid-area: 1 / 1 / 3 / 2;
+    padding-bottom: 56.3%; 
+    position: relative;
+}
+/* Contenedor  del video 2 */
+.container2{
+    grid-area: 1 / 2 / 3 / 3;
+    padding-bottom: 56.3%; 
+    position: relative;
+}
+/* Contenedor  del video 3 */
+.container3{
+    grid-area: 1 / 3 / 3 / 4;
+    padding-bottom: 56.3%; 
+    position: relative;
+    width: 90%;
+}
+/* Video */
+iframe{
+    width: 380px;
+    height: 230px;
+    border: none;
+    border-radius: 12px; 
+}
+/*Imagenes de contacto*/
+.fotocontainer{
+    width: 200px;
+    height: 300px;
+    display: block;
+    width: 60%;
+    margin: auto;
+}
+/*Titulo de contacto*/
+.titulocontac {
+    padding: 15px;
+    background-color: #fff;
+    width: fit-content;
+    margin: 15px auto;
+    border-radius: 30px;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+}
+/* Parrafo dentro de las cards del video */
+.phaVideo{
+    font-size: 20px;
+    padding: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+/* Hover para links de las cards */
+.linkNews:hover{
+    color: red;
+}
+/* Contenedor Registro padre */
+.regs{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Estilo para pagina registro ciencias naturales */
+.containerRegs{
+    background-color: #fff;
+    border-radius: 25px;
+    max-width: 90%;
+    width: 500px;
+    height: 450px;
+}
+/* Contenedor hijo */
+.childContainerRegs{
+    padding: 25px
+}
+/* Titulo */
+.titRegs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/* Subtitulo de la pagina registro */
+.subtitulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 15px;
+}
+/* Estilo para labels */
+.labelregs{
+    font-family: 'Roboto', sans-serif;
+    color: #04AA6D;
+}
+/* Inputs tipo textos y los select */
+input[type="text"], select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/* Estilo para boton submit */
+.submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* Efecto hover para boton de submit */
+.submit:hover{
+    background-color: #2100A7;
+}
+/*Estilo de la tabla periodica*/
+/* Titulo Tabla periodica */
+._header{
+    padding: 15px;
+    background-color: #fff;
+    width: fit-content;
+    margin: 15px auto;
+    border-radius: 30px;
+}
+td {
+    width: 100px;
+    border: 1px solid black;
+    text-align: center;
+}
+.espacioBlanco {
+    border: none; /*deshabilitar la vista de las filas y columnas que no se muestran en la tabla periodica*/
+}
+table{
+    margin: 40px;
+}
+
+/*colorizacion de las diferentes celdas de la tabla periodica*/
+.grupo_XV {
+    background-color: #ddabff;
+}
+.grupo_I {
+    background-color: #f7caac;
+}
+.grupo_II {
+    background-color: #ffe599;
+}
+.grupo_III_XII {
+    background-color: #ffff00;
+}
+.grupo_XVIII {
+    background-color: #00ccff;
+}
+.grupo_XVII {
+    background-color: #ff66ff;
+}
+.grupo_XIV {
+    background-color: #68fb61;
+}
+.grupo_XX {
+    background-color: #e2efd9;
+}
+/* Llamar a los links por la clase especifica para evitar afectar a todos los links de la web */
+.linksTabla{
+    text-decoration: none; /*quitarle la decoracion a la etiqueta a*/
+    cursor: pointer;
+    color: black;
+}
+.linksTabla:visited {
+    text-decoration: none; /*quitarle la decoración a la etiqueta luego de ser visitada*/
+}
+td:hover{
+    background-color: rgba(0, 0, 0, 0);
+}
+td:active{
+    background-color: rgb(0, 51, 102);
+}
+/* Estilos para pagina Contacto */
+
+/* Pie de pagina */
+footer{
+    position: absolute;
+    width: 100%;
+    background: #ddd;
+    min-height: 100px;
+    padding: 12px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* Iconos y el menu del pie de pagina */
+footer .social_icon, .footerMenu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Quitar el estilo de lista */
+footer .social_icon li, .footerMenu li{
+    list-style: none;
+}
+/* Links de los iconos de redes */
+footer .social_icon li a{
+    font-size: 25px;
+    color: #6c6c6c;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+/* Efecto de hover para los iconos del pie de pagina */
+footer .social_icon li a:hover{
+    transform: translateY(-10px);
+}
+/* Menu inferior */
+footer .footerMenu li a{
+    font-size: 15px;
+    color: #6c6c6c;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration:none;
+    opacity: 0.75;
+}
+/* Efecto hover para el menu inferior */
+footer .footerMenu li a:hover{
+    opacity: 1;
+}
+/* Parrafo de copyright */
+footer p{
+    color: #6c6c6c;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    opacity: 0.75;
+}
+/* clase para quitar la linea y cambiar el color del hipervinculo*/
+.hipervinculo{
+    text-decoration: none;
+    float: right;
+    color: black;
+}
+.hipervinculo:hover{
+    color: #2100A7;
+}

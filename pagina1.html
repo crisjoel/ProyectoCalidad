@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Login - SoloCiencia</title>
+</head>
+<body class="fondoExitoso">
+    <div class="containerLogin">
+        <div class="childContainerL">
+            <img src="Images/SC-removebg-preview.png" class="logo">
+            <div>
+                <form method="POST" action="pagina1.jsp">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="Nombre" class="inputsForms" required>
+                    <br>
+                    <br>
+                    <label for="contraseña">Contraseña</label>
+                    <input type="password" id="contraseña" name="Contrasena" class="inputsFormsP" required>
+                    <br>
+                    <br>
+                    <div>
+                        <label>
+                            <input type="checkbox" name="recordarUsuario" class="alignleft">
+                            Recordar usuario
+                        </label>
+                        <a href="registroUsuario.html" class="hipervinculo">Crear nueva cuenta</a>
+                    </div>
+                    <br>
+                    <input type="submit" class="btnRegister" value="Acceder">
+                </form>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
